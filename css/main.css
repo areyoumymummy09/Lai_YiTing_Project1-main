@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden {
+  display: none;
+}
+
+#container {
+  margin: 20px auto;
+  width: 428px;
+  border: solid 1px #f97708;
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 72%
+  );
+  border-radius: 5px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainContent {
+  display: grid;
+  grid-template-columns: repeat(4, 85px);
+  grid-column-gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+article {
+  grid-column: 1/-1;
+}
+
+img {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  display: block;
+  border: 6px solid #e56399;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: 50%;
+  width: 50%;
+}
+
+@font-face {
+  font-family: "amaticbold";
+  src: url("../font/amatic-bold-webfont.woff2") format("woff2"),
+    url("../font/amatic-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "amaticbold";
+  font-size: 50px;
+  color: #e56399;
+  text-align: center;
+  letter-spacing: -1px;
+  text-shadow: 2px 1px 0 black;
+  font-weight: 900;
+}
+
+p {
+  line-height: 28px;
+}
+
+h2 + p::first-letter {
+  color: white;
+  background-color: black;
+  padding: 14px 6px;
+  margin-right: 8px;
+  float: left;
+  font-size: 32px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 rgb(80, 227, 80);
+}
+
+span {
+  font-family: "amaticbold";
+  color: #e56399;
+  letter-spacing: 2.5px;
+  text-shadow: 2px 1px 0 black;
+  font-weight: bold;
+  font-size: 20px;
+}
